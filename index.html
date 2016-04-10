@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link href="css/flat-ui.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+</head>
+<style>
+.jumbotron {
+    background-color: #191919;
+    color: #fff;
+    padding: 100px 25px;
+}
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.container-fluid {
+    padding: 60px 50px;
+}
+.bg-grey {
+    background-color: #f6f6f6;
+}
+.logo-small {
+    color: #191919;
+    font-size: 50px;
+}
+
+.logo {
+    color: #191919;
+    font-size: 200px;
+}
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+
+/* carousal*/
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #191919;
+}
+
+.carousel-indicators li {
+    border-color: #191919;
+}
+
+.carousel-indicators li.active {
+    background-color: #191919;
+}
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
+}
+
+/* carousal-end */
+
+/* navbar */
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #191919;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #191919 !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+/* navbar end*/
+
+/*font styles */
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+}
+
+.jumbotron {
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+}
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h1{
+    text-transform: uppercase;
+	color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+	}
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+/* font end */
+
+
+/* slide element start */
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/* slide element end */
+
+/*custom */
+
+#test{ position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* custom end */
+#bottom{
+background-color: #191919;
+margin=0px 0px 0px 0px;
+
+}
+
+</style>
+<body>
+<!-- nav bar-->
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+ <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">TechXol</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#moto">OUR MOTO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- navbar end-->
+<div class="jumbotron" id="test"></div>
+<div id="section1" class="jumbotron text-center">
+  <h1>TechXol</h1> 
+  <p>Your one stop soluion for all your IT needs</p> 
+</div>
+<!-- about-->
+<div id="about" class="container-fluid">
+  <div class="row">
+	  <h1 class="text-center">About Us</h1>
+    <div class="col-sm-8">
+      
+     <h4></h4>
+      <p>TechXol is incorporated in 2015 consisting of a group of young minds working hard to simplify your IT requrements<br>
+      Our core group constist of minds specialised in various feilds<br>
+      TechXol also tries to demistify a lot of technologies by conductiong seminars and workshop</p>
+      <h4></h4>
+      <a id="but" href="#contact"><button class="btn btn-default btn-lg" target="#contact">Get in Touch</button></a>
+    </div>
+    <div class="col-sm-4  " >
+      <span class="glyphicon glyphicon-phone logo"></span>
+    </div>
+  </div>
+</div>
+<!-- services-->
+<div id="services" class="container-fluid text-center slideanim bg-grey">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+		
+      <span class="glyphicon glyphicon-user logo-small"></span>
+      <h4>SUPPORT</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-phone logo-small"></span>
+      <h4>MOBILE APPS</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-education logo-small"></span>
+      <h4>SEMINARS</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    </div>
+    <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-imac logo-small"></span>
+      <h4>SOFTWARE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>INTERNET RELATED SERVICES</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4>AUTOMATION</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+</div>
+<!--port-->
+<div id="moto" class="container-fluid text-center  slideanim">
+  
+
+ <h2>our Moto</h2>
+<div id="myCarousel" class="carousel slide text-center slideanim" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <h4>Simplicity and elegance to perfection</h4>
+    </div>
+    <div class="item">
+      <h4>some more text</h4>
+    </div>
+    <div class="item">
+      <h4>some more text 2</h4>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+  <!-- contact us -->
+   <div id="contact" class="container-fluid bg-grey text-center">
+  <h2 class="text-center">CONTACT</h2>
+   
+    <div>
+      <div class="row">
+        <div class="col-sm-12  form-group">
+			<input class="form-control " id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-12 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+        <div class="col-sm-12 form-group">
+          <input class="form-control" id="sub" name="sub" placeholder="Subject" type="text" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="7"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-center" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+ <div class="bg-grey text-center">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chennai, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 8883440958</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> techxol@gmail.com</p>
+    </div>
+<!-- contact us end-->
+</div>
+
+<div id="bottom" class="text-center"> follow us on  <br>
+
+		  <span class="fui-facebook"> </span>
+          <span class="fui-twitter"> </span>
+          <span class="fui-linkedin">  </span>
+          <span class="fui-google-plus"> </span></div>
+</body>
+
+<script>
+	//custom
+var a = $("#test").height();
+$("#section1").height(a);
+$("#test").hide();
+$("nav").hide();
+	
+	
+	//custom end
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage'] , #but").on('click', function(event) {
+
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash
+  var hash = this.hash;
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 900, function(){
+   window.location.hash = hash;
+    
+    });
+  });
+  
+  $("#bottom").height(a/5);
+});
+
+//slide start
+$(window).scroll(function() {
+     var h= $(window).scrollTop();
+     if(h>a)
+      $("nav").animate({  opacity: "show"},800);
+     else
+     $("nav").animate({  opacity: "hide"},800);
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + a-a/5) {
+      $(this).addClass("slide");
+    }
+  });
+});
+//slide end
+//imac start
+iw=$("#imacdiv").width();
+$("#imacdiv").text(iw);
+$("#imac").attr('src',"imac.png");
+$("#imac").css("width",iw);
+
+//imac end
+</script>
+</html>
